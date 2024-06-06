@@ -1,4 +1,14 @@
+import StreamVideoProvider from '@/providers/StreamClientProvider';
+import { Metadata } from 'next';
 import React, { ReactNode } from 'react';
+
+export const metadata: Metadata = {
+  title: "RoomVc",
+  description: "Video calling app created by Arpan",
+  icons: {
+    icon: '/icons/logo.svg'
+  }
+};
 
 type RootLayoutProps = {
   children: ReactNode;
@@ -7,7 +17,11 @@ type RootLayoutProps = {
 const RootLayout = ({ children }: RootLayoutProps): JSX.Element => {
   return (
     <main>
-      {children}
+      <StreamVideoProvider>
+        {children}
+        
+      </StreamVideoProvider>
+      
 
     </main>
   );

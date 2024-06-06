@@ -1,3 +1,5 @@
+import CallList from '@/components/CallList'
+import { CallRecordingList } from '@stream-io/video-react-sdk'
 import React from 'react'
 
 const Recordings = () => {
@@ -6,6 +8,7 @@ const Recordings = () => {
       <h1 className="text-3xl font-bold">
         Recordings
       </h1>
+      <CallList type="recordings" />
       
     </section>
   )

@@ -26,7 +26,7 @@ const MobileNav = () => {
                 <SheetContent side="right" className="border-none bg-dark-1">
                 <Link href="/" className="flex items-center gap-1">
                     <Image src="/icons/logo.svg" width={32} height={32} alt="roomvc logo" className='max-sm:size-10' />
-                    <p className="text-[26px] font-extrabold text-white">RoomVc</p>
+                    <p className="text-[26px] font-extrabold text-white">RoomVc by Arpan</p>
                 </Link>
                 <div className="flex h-[calc(100vh-72px)] flex-col justify-between overflow-y-auto">
                     <SheetClose asChild>
